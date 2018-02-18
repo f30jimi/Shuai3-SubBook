@@ -1,3 +1,18 @@
+/*
+ * editActivity
+ *
+ * Version 1.0
+ *
+ *
+ * February 04 2018
+ *
+ *
+ * Copyright @ 2018 Shuai Li, COMPUT301, University of Alberta - All Rights Reserved.
+ * You may use, distribute, or modify this code under teams and conditions of the Code of
+ *    Student Behavior at Univertity of Alberta.
+ * You can find a cope of the license in this porject. Otherwise please contact contact@abc.ca.
+ */
+
 package com.example.jimi.shuai3_subbook;
 
 import android.content.Intent;
@@ -15,6 +30,10 @@ import android.widget.Toast;
 import static com.example.jimi.shuai3_subbook.MainActivity.sublist;
 
 public class editActivity extends AppCompatActivity {
+    /**
+     * @author Shuai Li
+     */
+
 
     private EditText nameEdit;
     private EditText amountEdit;

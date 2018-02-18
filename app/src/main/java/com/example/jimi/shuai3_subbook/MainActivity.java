@@ -1,3 +1,19 @@
+
+/*
+ * MainActivity
+ *
+ * Version 1.0
+ *
+ *
+ * February 04 2018
+ *
+ *
+ * Copyright @ 2018 Shuai Li, COMPUT301, University of Alberta - All Rights Reserved.
+ * You may use, distribute, or modify this code under teams and conditions of the Code of
+ *    Student Behavior at Univertity of Alberta.
+ * You can find a cope of the license in this porject. Otherwise please contact contact@abc.ca.
+ */
+
 package com.example.jimi.shuai3_subbook;
 
 
@@ -20,6 +36,10 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
+    /**
+     * @author Shuai Li
+     */
+
     private static final String FILENAME = "file.txt";
     private TextView totalTv;
     private ListView lv;
@@ -51,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         setTotalTv();
 
 
-        //add
+        //add button been triggered
         Adds.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //delete
+        //delete button been triggered
         Deletes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -80,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //edit
+        //edit button been triggered
         Edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,6 +114,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    //Edit method:
+    // Step 1.get the index of a selected suscription
+    // Step 2.delete the suscription at given index
+    // Step 3.insert the editted suscription at given index
     private void setEdit() {
         SparseBooleanArray checked = lv.getCheckedItemPositions();
         int size = lv.getCount();
@@ -123,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    //calculate total by going throung sublist
     private void setTotalTv(){
         totalTv = (TextView) findViewById(R.id.totalCharge);
         int charges = lv.getCount();
@@ -133,6 +159,9 @@ public class MainActivity extends AppCompatActivity {
 
         totalTv.setText("Total: $"+String.valueOf(totalCharges));
     }
+
+
+    //add method
 
     private void addSuscription()
     {

@@ -1,7 +1,23 @@
+/*
+ * Suscription
+ *
+ * Version 1.0
+ *
+ *
+ * February 04 2018
+ *
+ *
+ * Copyright @ 2018 Shuai Li, COMPUT301, University of Alberta - All Rights Reserved.
+ * You may use, distribute, or modify this code under teams and conditions of the Code of
+ *    Student Behavior at Univertity of Alberta.
+ * You can find a cope of the license in this porject. Otherwise please contact contact@abc.ca.
+ */
+
+
 package com.example.jimi.shuai3_subbook;
 
 /**
- * Created by jimi on 2018-02-08.
+ * @author Shuai Li
  */
 
 public class Suscription {
